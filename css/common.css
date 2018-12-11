@@ -1,0 +1,209 @@
+html,body{
+  height: 100%;
+}
+ul, p{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style: none;
+}
+.map-container{
+  height: 100%;
+}
+.nav-list{
+  position: absolute;
+  left: 40px;
+  bottom: 70px;
+  line-height: 40px;
+  color: #50555e;
+  font-size: 14px;
+}
+.nav-list .nav-item{
+  margin-bottom: 8px;
+  position: relative;
+  cursor: pointer;
+}
+.nav-list .nav-icon{
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  background: #ddd;
+  vertical-align: middle;
+  margin-right: 13px;
+}
+.nav-list .sub-nav{
+  position: absolute;
+  opacity: 0;
+  width: 100px;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  transition: opacity .3s;
+}
+.nav-list .nav-item:hover .sub-nav{
+  opacity: 1;
+}
+.nav-item .nav-icon1{
+  background: url("../images/kej1i_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.nav-item .nav-icon2{
+  background: url("../images/shuangchuang_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.nav-item .nav-icon3{
+  background: url("../images/fuhua_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.nav-item .nav-icon4{
+  background: url("../images/gonggong_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.nav-item .nav-icon5{
+  background: url("../images/kej2i_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.nav-item .nav-icon6{
+  background: url("../images/fuhuaqi_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.nav-item .nav-icon7{
+  background: url("../images/fuhuayuan_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.home-menu{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  top: 40px;
+  left: 40px;
+  padding: 20px 0;
+  box-sizing: border-box;
+  background: #eef2f8;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px #b7b7b7;
+  cursor: pointer;
+}
+.home-menu .home-menu-icon{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: url("../images/home_menu_icon.png") no-repeat center;
+  background-size: contain;
+}
+.page-title{
+  position: absolute;
+  width: 100%;
+  top: 14px;
+  text-align: center;
+}
+.right-panel{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  bottom: 40px;
+  width: 400px;
+  background: #eef2f8;
+}
+.right-panel .panel-hd{
+  height: 80px;
+  line-height: 80px;
+  padding: 0 30px;
+  color: #fff;
+  background: linear-gradient(bottom, #0659e7, #06a0e7, #06d4e7);
+  background: -webkit-linear-gradient(bottom, #0659e7, #06a0e7, #06d4e7);
+  overflow: hidden;
+}
+.panel-box{
+  height: 100%;
+  position: relative;
+}
+.panel-hd .hd-title{
+  font-size: 30px;
+}
+.panel-hd .hd-right{
+  font-size: 16px;
+  float: right;
+}
+.panel-hd .view-list{
+  cursor: pointer;
+}
+.panel-box .panel-bd{
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  bottom: 0;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+.panel-bd .area-info{
+  margin-top: 20px;
+  color: #50555e;
+  padding: 0 30px;
+}
+.panel-bd .area-info .total-enterprise{
+  padding: 27px 0;
+  background: #e2eef7;
+  text-align: center;
+  font-size: 18px;
+}
+.panel-bd .area-info .total-icon{
+  display: inline-block;
+  width: 60px;
+  height: 66px;
+  background: url("../images/total_enterprise_icon.png") no-repeat center;
+  background-size: contain;
+}
+.panel-bd .area-info .total-info{
+  display: inline-block;
+  color: #06a2e7;
+}
+.panel-bd .area-info .total-info .number{
+  font-size: 36px;
+}
+.panel-bd .area-info .total-info .total-desc{
+  color: #50555e;
+}
+.panel-bd .area-info .area-wrapper{
+  margin-top: 40px;
+}
+.panel-bd .area-info .area-wrapper .area-title{
+  font-size: 18px;
+  color: #303235;
+  margin-bottom: 20px;
+}
+.panel-bd .area-info .area-wrapper .wrapper-box{
+  overflow: hidden;
+}
+.panel-bd .area-info .area-wrapper .wrapper-item{
+  float: left;
+  width: 50%;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.panel-bd .area-info .area-wrapper .wrapper-item:nth-child(2n){
+  padding-right: 0;
+  padding-left: 10px;
+}
+.panel-bd .area-info .area-wrapper .item-con{
+  text-align: center;
+  background: #e2eef7;
+  height: 120px;
+  font-size: 18px;
+  color: #06a2e7;
+  overflow: hidden;
+}
+.panel-bd .area-info .area-wrapper .number{
+  font-size: 30px;
+}
+.panel-bd .area-info .area-wrapper .item-desc{
+  font-size: 14px;
+  color: #50555e;
+}
+.panel-bd .area-info .area-wrapper .con-box{
+  margin-top: 20px;
+  font-size: 14px;
+  color: #50555e;
+  line-height: normal;
+}
